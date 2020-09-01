@@ -10,7 +10,7 @@
 	  	<h1>정말로 삭제하시겠습니까?</h1>
 		<form action="/removeMember" method="post">
 		  	<table border="1">		  	
-			  	<tr><td>아이디 </td><td><input type="text" name="memberId" th:value="${member.memberId}" readonly></td></tr>
+			  	<tr><td>아이디 </td><td><input type="text" name="memberId" th:value="${session.SID}" readonly></td></tr>
 			  	<tr><td>비밀번호 </td><td><input type="text" name="memberPw"></td></tr>			  
 			  	<tr><td colspan="2" style="text-align: center;"><button type="submit" >회원삭제</button></td></tr>		  	
 		  	</table>
